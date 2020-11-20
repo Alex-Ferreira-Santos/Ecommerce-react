@@ -18,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <button className="hover">teste</button>
       </header>
     </div>
   );
