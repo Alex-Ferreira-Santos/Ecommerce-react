@@ -14,12 +14,12 @@ const Nav: React.FC = () => {
       <nav>
         <h1>LOGO</h1>
         <Inputs>
-          <input type="search" name="pesquisa" id="pesquisa" placeholder="pesquisa..."/>
-          <button type="submit"><img src={lupa} alt="lupa"/></button>
+            <input type="search" name="pesquisa" id="pesquisa" placeholder="pesquisa..."/>
+            <button type="submit" className="search"><img src={lupa} className="lupa" alt="lupa"/></button>
         </Inputs>
-        <Link to=""><img src={carrinho} alt="carrinho"/></Link>
-        <button><img src={burguer} alt=""/></button>
-        <p>olá usuario</p>
+        <Link to=""><img src={carrinho} className="carrinho" alt="carrinho"/></Link>
+        <button className="menu"><img src={burguer} className="burguer" alt="menu"/></button>
+        
       </nav>
     </Container>
   );
