@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Inputs } from './styles';
+import { Container, Inputs, Pages } from './styles';
 
 import lupa from "../../img/magnifying-glass.svg"
 import carrinho from "../../img/shopping-cart.svg"
@@ -12,19 +12,26 @@ const Nav: React.FC = () => {
 
   let open = true;
   const btn = document.querySelector(".menu")
+  const menu = document.getElementById("hide");
+  const className = menu?.getAttribute("class")
   btn?.addEventListener("click",() => {
     if (open) {
+      console.log(className);
       btn.setAttribute("Class","menu open");
+      menu?.setAttribute("class",`${className} active`);
       open = false
     }else{
+      console.log(className);
       btn.removeAttribute("class");
       btn.setAttribute("class","menu");
+      menu?.setAttribute("class",`${className}`);
       open = true
     }
     
   })
 
   return (
+    <div>
       <Container>
         <nav>
           <h1>LOGO</h1>
@@ -41,6 +48,16 @@ const Nav: React.FC = () => {
           <p className="ola">Olá usuario</p>
         </nav>
       </Container>
+      <Pages id="hide">
+            <Link to="/" className="pages">Home</Link>
+            <Link to="" className="pages">Produtos</Link>
+            <Link to="" className="pages">Vender</Link>
+            <Link to="" className="pages">Contato</Link>
+            <Link to="" className="pages">Ofertas</Link>
+            <Link to="" className="pages">Favoritos</Link>
+            <Link to="" className="pages">Login</Link>
+      </Pages>
+    </div>
   );
 };
 

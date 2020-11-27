@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     h1{
         margin: 0.5em 0.2em;
@@ -35,7 +36,7 @@ export const Container = styled.div`
         cursor: pointer;
         border: none;
         background-color: transparent;
-        margin-left: 0.8em;
+        margin: 0 0.4em;
         width: 40px;
         
     }
@@ -62,8 +63,20 @@ export const Container = styled.div`
 
     .ola{
         position: absolute;
-        margin-left: 40%;
-        top: 2.2em;
+        margin-left: 38%;
+        top: 2.3em;
+    }
+
+    @media(min-width:500px){
+        .ola{
+            margin-left: 45%;
+        }
+    }
+
+    @media(min-width:1024px){
+        .ola{
+            margin-left: 46%;
+        }
     }
     
 `;
@@ -116,3 +129,31 @@ export const Inputs = styled.div`
         height: 1em;
     }
 `;
+
+export const Pages = styled.div`
+    background-image: linear-gradient(#A57FF6, #7FBDF6);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    transform: translateY(-10px);
+    transition-duration: 0.3s;
+    z-index:-1;
+
+    &.active{
+        transform: translateY(0px);
+    }
+
+    .pages:hover{
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+`
