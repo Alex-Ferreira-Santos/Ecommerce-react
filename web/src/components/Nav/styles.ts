@@ -5,7 +5,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 
     h1{
         margin: 0.5em 0.2em;
