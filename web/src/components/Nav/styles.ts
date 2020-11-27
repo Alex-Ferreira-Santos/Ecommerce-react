@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: #A57FF6;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,8 +12,10 @@ export const Container = styled.div`
     }
 
     nav{
+        background-color: #A57FF6;
         width: 100%;
         display: flex;
+        z-index: 1;
     }
 
     .carrinho{
@@ -135,13 +136,16 @@ export const Pages = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: sticky;
-    transform: translateY(-10px);
+    position: relative;
+    transform: translateY(-230px);
     transition-duration: 0.3s;
-    z-index:-1;
+    z-index: 0;
+
 
     &.active{
         transform: translateY(0px);
+        
+        
     }
 
     .pages:hover{
