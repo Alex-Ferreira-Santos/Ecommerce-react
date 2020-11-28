@@ -59,8 +59,8 @@ const Nav: React.FC = () => {
             <Link to="" className="pages">Vender</Link>
             <Link to="" className="pages">Contato</Link>
             <Link to="" className="pages">Ofertas</Link>
-            <Link to="" className="pages">Favoritos</Link>
-            <Link to="" className="pages">Login</Link>
+            <Link to="" className="pages fav">Favoritos</Link>
+            <Link to="" className="pages fav">Login</Link>
       </Pages>
     </div>
   );

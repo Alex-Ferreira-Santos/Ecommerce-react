@@ -203,4 +203,14 @@ export const Pages = styled.div`
         width: 100%;
         text-align: center;
     }
+
+    @media(min-width: 750px) {
+        transform: translateY(0px);
+        align-items: center;
+        flex-direction: row;
+
+        .fav{
+            display: none;
+        }
+    }
 `
