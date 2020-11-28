@@ -73,11 +73,22 @@ export const Container = styled.div`
         }
     }
 
-    @media(min-width:1024px){
+    @media(min-width:750px){
+        nav{
+            justify-content: flex-start;
+            align-items: flex-start;
+            
+        } 
+
+        h1{
+            margin: 0.8em;
+        }
+
         .ola{
-            margin-left: 46%;
+            right: 10%;
         }
     }
+
     
 `;
 
@@ -86,9 +97,6 @@ export const Inputs = styled.div`
     display: flex;
     align-items: center;
     width:100%;
-    
-    
-
 
     #pesquisa{
         border: none;
@@ -127,6 +135,13 @@ export const Inputs = styled.div`
     img{
         width: 1em;
         height: 1em;
+    }
+
+    @media(min-width:750px){
+        width: 50%;
+        position: relative;
+        top: 1em;
+        margin-left: 1em;
     }
 `;
 

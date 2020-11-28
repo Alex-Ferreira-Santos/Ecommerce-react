@@ -45,7 +45,12 @@ const Nav: React.FC = () => {
             <div className="two"></div>
             <div className="three"></div>
           </button>
-          <p className="ola">Olá usuario</p>
+          <div className="salvos">
+            <Link to="">Favoritos</Link>
+            <Link to="">Carrinho</Link>
+            <Link to="">Login</Link>
+          </div>
+          <p className="ola">Olá usuario!</p>
         </nav>
       </Container>
       <Pages id="hide">
