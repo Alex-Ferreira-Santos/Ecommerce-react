@@ -41,6 +41,10 @@ export const Container = styled.div`
         
     }
 
+    .salvos{
+        display: none;
+    }
+
     .one,.two,.three{
         background-color: black;
         height: 5px;
@@ -82,6 +86,31 @@ export const Container = styled.div`
 
         h1{
             margin: 0.8em;
+        }
+
+        .menu, .link{
+            display: none;
+        }
+
+        .salvos{
+            position: absolute;
+            right: 4em;
+            top: 1em;
+            width: 15em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: black;
+                transition: .3s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
 
         .ola{
@@ -141,7 +170,7 @@ export const Inputs = styled.div`
         width: 50%;
         position: relative;
         top: 1em;
-        margin-left: 1em;
+        margin-left: 3em;
     }
 `;
 
