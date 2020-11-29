@@ -11,11 +11,27 @@ export const Container = styled.div`
     }
 
     footer {
+        width: 100%;
         background: #84A6FF;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 1em;
     }
 
     h2{
         color: #fff;
+    }
+
+    .nav{
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        transition: .3s;
+
+        &:hover{
+            background-color: white;
+            color: black;
+        }
     }
 `;
 

@@ -19,11 +19,11 @@ const Footer: React.FC = () => {
         </Novidades>
         <h1>LOGO</h1>
         <nav>
-          <Link to="">ajuda</Link>
-          <Link to="">redes sociais</Link>
-          <Link to="">sobre</Link>
-          <Link to="">minha conta</Link>
-          <Link to="">copyright</Link>
+          <Link to="" className="nav">ajuda</Link>
+          <Link to="" className="nav">redes sociais</Link>
+          <Link to="" className="nav">sobre</Link>
+          <Link to="" className="nav">minha conta</Link>
+          <Link to="" className="nav">copyright</Link>
         </nav>
       </footer>
     </Container>
