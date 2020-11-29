@@ -94,7 +94,7 @@ export const Container = styled.div`
 
         .salvos{
             position: absolute;
-            right: 4em;
+            right: 0em;
             top: 1em;
             width: 15em;
             display: flex;
@@ -106,9 +106,13 @@ export const Container = styled.div`
                 font-size: 14px;
                 color: black;
                 transition: .3s;
+                width: 100%;
+                text-align: center;
+                color: white;
 
                 &:hover {
-                    color: #fff;
+                    color: black;
+                    background-color: #fff;    
                 }
             }
         }
@@ -118,6 +122,11 @@ export const Container = styled.div`
         }
     }
 
+    @media (min-width:875px){
+        .salvos{
+            right: 3em;
+        }
+    }
     
 `;
 
@@ -175,7 +184,7 @@ export const Inputs = styled.div`
 `;
 
 export const Pages = styled.div`
-    background-image: linear-gradient(#A57FF6, #7FBDF6);
+    background-image: linear-gradient(#A57FF6,#7FBDF6);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -184,11 +193,12 @@ export const Pages = styled.div`
     transition-duration: 0.3s;
     z-index: 0;
 
+    .pages{
+        transition: .3s;
+    }
 
     &.active{
         transform: translateY(0px);
-        
-        
     }
 
     .pages:hover{
@@ -206,11 +216,21 @@ export const Pages = styled.div`
 
     @media(min-width: 750px) {
         transform: translateY(0px);
+        background: #A57FF6;
         align-items: center;
         flex-direction: row;
-
+        position: relative;
+        width: 50%;
+        margin-left: 10em;
+        bottom: 2em;
+        z-index: 1;
+        
         .fav{
             display: none;
+        }
+
+        .pages{
+            width: 100%;
         }
     }
 `
