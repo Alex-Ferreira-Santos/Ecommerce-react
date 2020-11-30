@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <Container>
       <footer>
         <Novidades>
-          <h2>Receba novidades</h2>
+          <h2>Receba novidades!</h2>
           <form action="">
             <div className="inputs">
               <input type="text" placeholder="Nome" name="nome" id="nome"/>

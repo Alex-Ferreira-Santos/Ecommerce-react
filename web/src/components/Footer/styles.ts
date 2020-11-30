@@ -33,6 +33,31 @@ export const Container = styled.div`
             color: black;
         }
     }
+
+    @media(min-width:750px){
+        text-align: initial;
+
+        footer{
+            display: block;
+        }
+
+        h1{
+            background: orange;
+            padding: 2em;
+            display: inline-block;
+            
+        }
+
+        nav{
+            display: inline-block;
+            width: 60%;
+            background: blue;
+        }
+
+        .nav{
+            width: 100%;
+        }
+    }
 `;
 
 export const Novidades = styled.div`
@@ -67,6 +92,7 @@ export const Novidades = styled.div`
 
     .inputs{
         display: flex;
+        flex-direction: row;
         justify-content:space-between;
         width: 100%;
     }
@@ -114,5 +140,53 @@ export const Novidades = styled.div`
         border: none;
         text-align: center;
         outline: none;
+    }
+
+    @media(min-width:750px){
+        width: 100vw;
+        position: absolute;
+        justify-content:center;
+        height: 70px;
+        flex-direction: row;
+        padding: 0 1em;
+
+
+        input{
+            margin: 0;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        .inputs{
+            justify-content: initial;
+            margin: 0;
+        }
+
+        form{
+            display: flex;
+        }
+
+        #nome{
+            width: 11.4375em;
+            padding: 0.5em 0;
+        }
+
+        #email{
+            width: 18.1425em; 
+            margin-left: 1em;      
+        }
+
+        #submit{
+            width: 9.25em;
+
+        }
+    }
+
+    @media(min-width:1024px){
+        width: auto;
+        padding: 1em;
+        right: 1em;
     }
 `;
