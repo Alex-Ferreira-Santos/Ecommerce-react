@@ -42,7 +42,6 @@ export const Container = styled.div`
         }
 
         h1{
-            background: orange;
             padding: 1em 2em;
             display: inline-block;
             margin-top: 2em;
@@ -56,11 +55,21 @@ export const Container = styled.div`
             bottom: 3em;
             right: 0.5em;
             width: 70%;
-            background: blue;
         }
  
     }
-    
+
+    @media (min-width:1024px){
+        h1{
+            padding: 2em;
+            margin-top: 0;
+        }
+        nav{
+            right: 9%;
+            width: 70%;
+        }
+    }
+
 `;
 
 export const Novidades = styled.div`
@@ -186,10 +195,10 @@ export const Novidades = styled.div`
 
         }
     }
-
     @media(min-width:1024px){
-        width: auto;
+        width: 70%;
         padding: 1em;
-        right: 1em;
+        bottom: 6em;
+        right: 3em;
     }
 `;
