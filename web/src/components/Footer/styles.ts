@@ -43,21 +43,24 @@ export const Container = styled.div`
 
         h1{
             background: orange;
-            padding: 2em;
+            padding: 1em 2em;
             display: inline-block;
-            
+            margin-top: 2em;
         }
 
         nav{
-            display: inline-block;
-            width: 60%;
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            position: absolute;
+            bottom: 3em;
+            right: 0.5em;
+            width: 70%;
             background: blue;
         }
-
-        .nav{
-            width: 100%;
-        }
+ 
     }
+    
 `;
 
 export const Novidades = styled.div`
