@@ -188,7 +188,8 @@ export const Pages = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    position: absolute;
+    width: 100%;
     transform: translateY(-230px);
     transition-duration: 0.3s;
     z-index: 0;
