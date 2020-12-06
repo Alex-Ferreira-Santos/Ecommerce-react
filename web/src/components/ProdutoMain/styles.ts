@@ -22,12 +22,15 @@ export const Container = styled.div`
             top: 0.5em;
             background-color: #e5e5e5;
             border-radius: 50%;
-            transition: 0;
         }
     }
 
     .heart{
         opacity: 0;
+        width:0;
+        height:0;
+        right:0.5em;
+        top: 0.5em;
         position: absolute;
         transition: .3s;
     }
