@@ -16,12 +16,10 @@ const Nav: React.FC = () => {
   const className = menu?.getAttribute("class")
   btn?.addEventListener("click",() => {
     if (open) {
-      console.log(className);
       btn.setAttribute("Class","menu open");
       menu?.setAttribute("class",`${className} active`);
       open = false
     }else{
-      console.log(className);
       btn.removeAttribute("class");
       btn.setAttribute("class","menu");
       menu?.setAttribute("class",`${className}`);

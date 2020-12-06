@@ -4,7 +4,7 @@ export const Container = styled.div`
     background-color: #E2E2E2;
     text-align: center;
 
-    h2{
+    .recem{
         font-weight: 400;
         margin-bottom: 2em;
     }
@@ -12,10 +12,15 @@ export const Container = styled.div`
     footer{
         display: none;
     }
+
+    .on{
+        right: 0;
+    }
 `;
 
 export const Mensagem = styled.div`
-
+    position: relative;
+    right: 100vw;
     display: flex;
     width: 90%;
     justify-content: center;
@@ -25,6 +30,8 @@ export const Mensagem = styled.div`
     padding: 1em 0 1em 0;
     border-radius: 0 5em 5em 0;
     margin: 1em 0;
+    transition: .5s;
+
 
     h2,p{
         text-align: center;
