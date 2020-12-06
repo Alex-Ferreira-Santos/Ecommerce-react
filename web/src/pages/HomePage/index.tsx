@@ -17,10 +17,10 @@ const HomePage: React.FC = () => {
         <h2>Recém adicionados</h2>
         <Carousel>
           <ProdutoMain/>
-          <ProdutoMain/>
-          <ProdutoMain/>
-          <ProdutoMain/>
+          
+          
         </Carousel>
+        <h1>paosjdsa</h1>
       <Footer/>
     </Container>
   );

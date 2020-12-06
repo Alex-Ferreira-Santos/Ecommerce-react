@@ -1,11 +1,12 @@
 import React from 'react';
+import heart from '../../img/heart.svg';
 
 import { Container } from './styles';
 
 const ProdutoMain: React.FC = () => {
   return (
     <Container>
-      <img src="" alt="favorite"/>
+      <img src={heart} alt="favorite" className="heart"/>
       <img src="https://radio93fm.com.br/wp-content/uploads/2019/02/produto.png" alt="produto" id="img"/>
       <div className="info">
         <p>Produto</p>

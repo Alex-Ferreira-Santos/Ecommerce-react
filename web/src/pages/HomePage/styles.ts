@@ -50,7 +50,6 @@ export const Carousel = styled.div`
     margin-bottom: 2em;
     padding: 1em;
     display: flex;
-    align-items: center;
     justify-content: center;
 
     @media (min-width:750px) {
