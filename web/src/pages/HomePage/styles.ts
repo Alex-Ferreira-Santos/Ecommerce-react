@@ -4,9 +4,13 @@ export const Container = styled.div`
     background-color: #E2E2E2;
     text-align: center;
 
-
     h2{
         font-weight: 400;
+        margin-bottom: 2em;
+    }
+
+    footer{
+        display: none;
     }
 `;
 
@@ -41,6 +45,16 @@ export const Mensagem = styled.div`
   
 `
 
-export const Produtos = styled.div`
+export const Carousel = styled.div`
+    background-color: #651AF1;
+    margin-bottom: 2em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @media (min-width:750px) {
+        justify-content: space-between;
+    }
+    
 `

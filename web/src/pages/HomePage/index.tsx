@@ -2,9 +2,9 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Nav from '../../components/Nav';
 import ProdutoMain from '../../components/ProdutoMain';
-import Produtos from '../Produtos';
 
-import { Container, Mensagem } from './styles';
+
+import { Carousel, Container, Mensagem } from './styles';
 
 const HomePage: React.FC = () => {
   return (
@@ -15,9 +15,12 @@ const HomePage: React.FC = () => {
           <p>O melhor site de <br/> compras e vendas</p>
         </Mensagem>
         <h2>Recém adicionados</h2>
-        <Produtos>
+        <Carousel>
           <ProdutoMain/>
-        </Produtos>
+          <ProdutoMain/>
+          <ProdutoMain/>
+          <ProdutoMain/>
+        </Carousel>
       <Footer/>
     </Container>
   );
